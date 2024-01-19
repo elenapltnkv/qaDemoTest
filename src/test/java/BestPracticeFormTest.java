@@ -21,6 +21,7 @@ BestPracticeForm form = new BestPracticeForm();
         form.setAddres();
         form.submitForm();
         form.compareDateForm();
+        System.out.println("end tests");
     }
 
 
