@@ -9,6 +9,7 @@ allure {
     report {
         version.set("2.25.0") //версия Allure Report (https://github.com/allure-framework/allure2)
     }
+
     adapter {
         aspectjWeaver.set(true) // обработка аннотации @Step
         frameworks {
@@ -18,13 +19,16 @@ allure {
         }
     }
 }
+repositories {
+    mavenCentral()
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:7.0.4",
             "org.junit.jupiter:junit-jupiter:5.10.0",
             "com.github.javafaker:javafaker:1.0.2",

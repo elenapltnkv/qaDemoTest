@@ -36,8 +36,8 @@ public class BestPracticeForm {
         $("#userEmail").setValue(email);
     }
 
-    public void chooseJender() {
-        $("#genterWrapper").$(byText("Female")).click();
+    public void chooseJender(String sex) {
+        $("#genterWrapper").$(byText(sex)).click();
     }
 
     public void setUserNumber() {
@@ -50,8 +50,8 @@ public class BestPracticeForm {
 
     }
 
-    public void setHobby() {
-        $("#hobbiesWrapper").$(byText("Reading")).click();
+    public void setHobby(String hobby) {
+        $("#hobbiesWrapper").$(byText(hobby)).click();
     }
 
     public void setAddres() {
@@ -63,7 +63,7 @@ public class BestPracticeForm {
 
     public void submitForm() {
         result.verifyModal();
-        //result.veryfyResultText();
+
 
     }
 
