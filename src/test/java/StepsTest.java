@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.webdriver;
 import static io.qameta.allure.Allure.attachment;
 
-@Tag("op")
+
 public class StepsTest extends Basic{
 BestStepLambda steps = new BestStepLambda();
 @Feature("Проверка отображения текста на главной странице формы")
