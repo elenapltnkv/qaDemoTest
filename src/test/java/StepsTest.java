@@ -5,12 +5,13 @@ import io.qameta.allure.Link;
 import io.qameta.allure.Owner;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.webdriver;
 import static io.qameta.allure.Allure.attachment;
 
-
+@Tag("op")
 public class StepsTest extends Basic{
 BestStepLambda steps = new BestStepLambda();
 @Feature("Проверка отображения текста на главной странице формы")
@@ -18,6 +19,7 @@ BestStepLambda steps = new BestStepLambda();
 @Owner("samigullaeva.ea")
 @DisplayName("Открытие страницы с формой")
 @Test
+
 public void openFormPage(){
     SelenideLogger.addListener("allure", new AllureSelenide());
     steps.openPageTest();

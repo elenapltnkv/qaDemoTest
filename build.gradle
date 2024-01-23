@@ -38,3 +38,9 @@ tasks.test {
     systemProperties(System.getProperties())
 
 }
+
+task op(type: Test) {
+    useJUnitPlatform {
+        includeTags("op")
+    }
+}
