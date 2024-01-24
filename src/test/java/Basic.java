@@ -21,6 +21,7 @@ public class Basic {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy= String.valueOf(PageLoadStrategy.EAGER);
+        Configuration.timeout = 10000;
         Configuration.remote = "http://45.9.40.101:4445/wd/hub/";
 
         DesiredCapabilities capabilities =  new DesiredCapabilities();
