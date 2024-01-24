@@ -9,6 +9,9 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.RegistrationPage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Basic {
     RegistrationPage registrationPage = new RegistrationPage();
 
@@ -21,8 +24,10 @@ public class Basic {
         Configuration.remote = "http://45.9.40.101:4445/wd/hub/";
 
         DesiredCapabilities capabilities =  new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
+        Map<String, Object> selenoidOptions = new HashMap<>();
+        selenoidOptions.put("enableVNC", true);
+        selenoidOptions.put("enableVideo", false);
+        capabilities.setCapability("selenoid:options", selenoidOptions);
         Configuration.browserCapabilities= capabilities;
     }
 
