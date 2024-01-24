@@ -20,12 +20,11 @@ public class StepsTest extends Basic {
     @Owner("samigullaeva.ea")
     @DisplayName("Открытие страницы с формой")
     @Test
-    @Tag("op")
+    //@Tag("op")
     public void openFormPage() {
         steps.openPageTest();
         steps.openPageTestShouldHaveText();
-        steps.takeScreenshot();
-        attachment("Source", webdriver().driver().source());
+
     }
 
     @Feature("Проверка заполнения формы:")

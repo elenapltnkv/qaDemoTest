@@ -117,16 +117,12 @@ public class BestStepLambda {
             result.veryfyResultText("Date of Birth", "Date of Birth 14 January,2014");
             result.veryfyResultText("Hobbies", "Reading");
             result.veryfyResultText("Address", adress);
-            takeScreenshot();
+
 
         });
     }
 
-    @Attachment(value = "screenshot", type = "image/png", fileExtension = "png")
-    public byte[] takeScreenshot() {
-        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
-
-    }
-
 
 }
+
+
