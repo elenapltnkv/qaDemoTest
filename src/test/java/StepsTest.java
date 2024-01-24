@@ -12,28 +12,27 @@ import static com.codeborne.selenide.Selenide.webdriver;
 import static io.qameta.allure.Allure.attachment;
 
 
-public class StepsTest extends Basic{
-BestStepLambda steps = new BestStepLambda();
-@Feature("Проверка отображения текста на главной странице формы")
-@Link(value = "на странице", url="https://demoqa.com")
-@Owner("samigullaeva.ea")
-@DisplayName("Открытие страницы с формой")
-@Test
+public class StepsTest extends Basic {
+    BestStepLambda steps = new BestStepLambda();
 
-public void openFormPage(){
-    SelenideLogger.addListener("allure", new AllureSelenide());
-    steps.openPageTest();
-    steps.openPageTestShouldHaveText();
-    steps.takeScreenshot();
-    attachment("Source", webdriver().driver().source());
-}
+    @Feature("Проверка отображения текста на главной странице формы")
+    @Link(value = "на странице", url = "https://demoqa.com")
+    @Owner("samigullaeva.ea")
+    @DisplayName("Открытие страницы с формой")
+    @Test
+    @Tag("op")
+    public void openFormPage() {
+        steps.openPageTest();
+        steps.openPageTestShouldHaveText();
+        steps.takeScreenshot();
+        attachment("Source", webdriver().driver().source());
+    }
 
     @Feature("Проверка заполнения формы:")
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка результатов заполнения формы")
     @Test
-    public void fillDateToForm(){
-        SelenideLogger.addListener("allure", new AllureSelenide());
+    public void fillDateToForm() {
         steps.openPageTest();
         steps.setName();
         steps.setLastName();

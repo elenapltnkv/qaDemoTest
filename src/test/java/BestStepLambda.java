@@ -31,8 +31,6 @@ public class BestStepLambda {
         step("Открыть главную страницу.", () ->
         {
             open("/automation-practice-form");
-
-
         });
     }
 
@@ -41,12 +39,9 @@ public class BestStepLambda {
         step("Проверить, что на главной странице отображается текст 'Practice Form'", () ->
         {
             $(".main-header").shouldHave(text("Practice Form"));
-
-
         });
 
     }
-
 
     public void setName() {
         step("Заполнить поле имя", () ->
@@ -127,7 +122,7 @@ public class BestStepLambda {
         });
     }
 
-    @Attachment(value="screenshot", type="image/png", fileExtension = "png")
+    @Attachment(value = "screenshot", type = "image/png", fileExtension = "png")
     public byte[] takeScreenshot() {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
 

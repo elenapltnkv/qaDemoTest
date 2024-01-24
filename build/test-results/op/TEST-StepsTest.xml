@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StepsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-23T07:12:45" hostname="user" time="10.378">
-  <properties/>
-  <testcase name="Открытие страницы с формой" classname="StepsTest" time="6.952"/>
-  <testcase name="Проверка результатов заполнения формы" classname="StepsTest" time="3.198"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -29,9 +29,22 @@ dependencies {
             "com.codeborne:selenide:7.0.4",
             "org.junit.jupiter:junit-jupiter:5.10.0",
             "com.github.javafaker:javafaker:1.0.2",
-            "io.qameta.allure:allure-selenide:2.25.0"
+            "io.qameta.allure:allure-selenide:2.25.0",
+            "org.slf4j:slf4j-simple:2.0.11"
     )
 }
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    testLogging {
+        lifecycle {
+            events "STARTED", "PASSED", "SKIPPED", "FAILED", "STANDARD_OUT", "STANDARD_ERROR"
+            exceptionFormat "short"
+        }
+    }
+
+}
+
 
 tasks.test {
     useJUnitPlatform()
