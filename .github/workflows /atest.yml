@@ -1,38 +1,15 @@
-name: test
-
+name: github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
 on: [ push ]
 jobs:
-  check-bats-version:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '11'
-      - uses: Xotabu4/selenoid-github-action@v2
+          java-version: '21'
+      - run: ./gralew clean test
+      #- uses: Xotabu4/selenoid-github-action@v2
 
-      - run: npm install -g bats
-      - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
-
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - uses: simple-elf/allure-report-action@master
-        if: always()
-        with:
-          allure_results: build/allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
-          allure_history: allure-history
-
-      - uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
