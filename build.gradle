@@ -52,8 +52,18 @@ tasks.test {
 
 }
 
-task op(type: Test) {
+task deep_test (type: Test) {
     useJUnitPlatform {
-        includeTags("op")
+        includeTags("d_test")
+    }
+}
+task smoke(type: Test) {
+    useJUnitPlatform {
+        includeTags("smoke")
+    }
+}
+task simple(type: Test) {
+    useJUnitPlatform {
+        includeTags("simple")
     }
 }

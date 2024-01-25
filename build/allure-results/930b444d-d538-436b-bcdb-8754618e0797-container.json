@@ -1,0 +1,1 @@
+{"uuid":"930b444d-d538-436b-bcdb-8754618e0797","name":"Открытие страницы с формой","children":["2054eebb-8e7c-42f6-931c-e90e8b0b30b4"],"befores":[{"name":"addListener","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1706104644286,"stop":1706104644294}],"afters":[],"start":1706104644209,"stop":1706104648989}

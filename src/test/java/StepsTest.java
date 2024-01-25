@@ -20,7 +20,7 @@ public class StepsTest extends Basic {
     @Owner("samigullaeva.ea")
     @DisplayName("Открытие страницы с формой")
     @Test
-    //@Tag("op")
+    @Tag("smoke")
     public void openFormPage() {
         steps.openPageTest();
         steps.openPageTestShouldHaveText();
@@ -31,6 +31,7 @@ public class StepsTest extends Basic {
     @Owner("samigullaeva.ea")
     @DisplayName("Проверка результатов заполнения формы")
     @Test
+    @Tag("d_test")
     public void fillDateToForm() {
         steps.openPageTest();
         steps.setName();
