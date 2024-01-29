@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"dcdbd932aa20207da12f8e7cedb3f433","name":"Проверка заполнения формы:","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"4ce5a4e619a7d45387e11e7203cffd95","name":"Проверка отображения текста на главной странице формы","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

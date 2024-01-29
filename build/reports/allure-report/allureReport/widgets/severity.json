@@ -1,0 +1,1 @@
+[{"uid":"e37dc8183d619303","name":"Открытие страницы с формой","time":{"start":1706512545886,"stop":1706512550793,"duration":4907},"status":"passed","severity":"normal"},{"uid":"a59fe0b281da3dfa","name":"Проверка результатов заполнения формы","time":{"start":1706105168728,"stop":1706105178884,"duration":10156},"status":"passed","severity":"normal"}]
