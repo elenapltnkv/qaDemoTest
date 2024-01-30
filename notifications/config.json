@@ -6,7 +6,7 @@
     "comment": "report from project",
     "reportLink": "",
     "language": "ru",
-    "allureFolder": "build/reports/allure-report/allureReport/",
+    "allureFolder": "/build/reports/tests/${TASK}",
     "enableChart": true
   },
   "telegram": {
