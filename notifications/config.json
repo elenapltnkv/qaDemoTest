@@ -4,7 +4,7 @@
     "project": "${TASK}",
     "environment": "qaDemo",
     "comment": "report from project",
-    "reportLink": "http://45.9.40.101:8888/job/qaDemo/allure/",
+    "reportLink": "http://45.9.40.101:8888/job/qaDemo/",
     "language": "ru",
     "messenger": "telegram",
     "allureFolder": "build/reports/allure-report/allureReport/",
