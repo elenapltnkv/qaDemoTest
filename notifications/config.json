@@ -1,11 +1,12 @@
 {
   "base": {
     "logo": "",
-    "project": "demoQa",
-    "environment": "demoQa",
+    "project": "${JOB_BASE_NAME}",
+    "environment": "qaDemo",
     "comment": "report from project",
-    "reportLink": "",
+    "reportLink": "${BUILD_URL}",
     "language": "ru",
+    "messenger": "telegram",
     "allureFolder": "build/reports/allure-report/allureReport/",
     "enableChart": true
   },
@@ -14,5 +15,4 @@
     "chat": "-1002128870098",
     "replyTo": ""
   }
-
 }
