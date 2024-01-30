@@ -1,10 +1,10 @@
 {
   "base": {
     "logo": "",
-    "project": "${JOB_BASE_NAME}",
+    "project": "${TASK}",
     "environment": "qaDemo",
     "comment": "report from project",
-    "reportLink": "${BUILD_URL}",
+    "reportLink": "http://45.9.40.101:8888/",
     "language": "ru",
     "messenger": "telegram",
     "allureFolder": "build/reports/allure-report/allureReport/",
