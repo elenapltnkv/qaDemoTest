@@ -1,7 +1,7 @@
 {
   "base": {
     "logo": "",
-    "project": "${TASK}",
+    "project": "${JOB_BASE_NAME}",
     "environment": "qaDemo",
     "comment": "report from project",
     "reportLink": "http://45.9.40.101:8888/job/qaDemo/",
